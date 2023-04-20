@@ -10,7 +10,7 @@ import Payment3 from './Components/Payment/Payment3';
 function App() {
   return (
     <div className="App">
-      Hello Hello 
+      Hello Hello Hello ...
       <Login />
       <Login2 />
       <Payment />
