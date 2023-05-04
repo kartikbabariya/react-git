@@ -17,11 +17,12 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 
 COPY --from=nodework /REACT-GIT/build .
+ EXPOSE 80
 
 CMD ["nginx" , "-g" , "daemon off;"]
 # # Add your nginx.conf
 # # COPY nginx.conf /etc/nginx/conf.d/default.conf
 # # Expose port
-# EXPOSE 80
+
 # # Start nginx
 # CMD ["nginx", "-g", "daemon off;"]
